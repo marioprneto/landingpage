@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Imóveis de Luxo - Contato</title>
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <style>
+            .cabecalho {
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+
+            .logo {
+                width: 4%;
+            }
+
+            .menu__lista {
+                display: flex;
+            }
+
+            .menu__item {
+                list-style: none;
+            }
+
+            .menu__item:last-child .menu__link {
+                margin-right: 0;
+            }
+
+            .menu__link {
+                color: #808080;
+                margin-right: 1.25rem;
+                text-decoration: none;
+            }
+
+            .menu__link.ativo {
+                color: #333333;
+                font-weight: bold;
+            }
+
+            .menu__link:hover {
+                color: #8110e3;
+                text-decoration: underline;
+                transform: scale(1.5);
+                transition: 1s;
+            }
+
+            .contato {
+                text-align: center;
+                padding: 2.5rem;
+            }
+
+            .contato__titulo {
+                color: #8d0606;
+                font-family: 'Pacifico', cursive;
+                font-size: 3rem;
+            }
+
+            .contato__descricao {
+                color: #595959;
+                font-size: 1.5rem;
+                font-weight: 100;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .contato__form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            .contato__input,
+            .contato__textarea {
+                width: 100%;
+                padding: 0.75rem;
+                font-size: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .contato__textarea {
+                resize: vertical;
+            }
+
+            .contato__botao {
+                display: inline-block;
+                background-color: #8110e3;
+                color: #fdfdfd;
+                padding: 0.75rem 1rem;
+                border: none;
+                border-radius: 4px;
+                font-size: 1.2rem;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+
+            .contato__botao:hover {
+                background-color: #6a0fc8;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img class="logo" src="assets/img/logo.jpg" alt="Logo da Empresa">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Início</a></li>
+                    <li class="menu__item"><a class="menu__link" href="sobre.html">Sobre Nós</a></li>
+                    <li class="menu__item"><a class="menu__link" href="detalhes.html">Detalhes</a></li>
+                    <li class="menu__item"><a class="menu__link ativo" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contato">
+                <h1 class="contato__titulo">Entre em Contato</h1>
+                <p class="contato__descricao">Preencha o formulário abaixo e um de nossos consultores entrará em contato com você.</p>
+                <form class="contato__form">
+                    <input type="text" placeholder="Seu nome" class="contato__input" />
+                    <input type="email" placeholder="Seu e-mail" class="contato__input" />
+                    <textarea placeholder="Sua mensagem" class="contato__input contato__textarea"></textarea>
+                    <button type="submit" class="contato__botao">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

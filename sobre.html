@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Imóveis de Luxo - Sobre Nós</title>
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <style>
+            .cabecalho {
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+
+            .logo {
+                width: 4%;
+            }
+
+            .menu__lista {
+                display: flex;
+            }
+
+            .menu__item {
+                list-style: none;
+            }
+
+            .menu__item:last-child .menu__link {
+                margin-right: 0;
+            }
+
+            .menu__link {
+                color: #808080;
+                margin-right: 1.25rem;
+                text-decoration: none;
+            }
+
+            .menu__link.ativo {
+                color: #333333;
+                font-weight: bold;
+            }
+
+            .menu__link:hover {
+                color: #8110e3;
+                text-decoration: underline;
+                transform: scale(1.5);
+                transition: 1s;
+            }
+
+            .corpo {
+                height: auto;
+            }
+
+            .banner {
+                position: relative;
+                height: 300px;
+            }
+
+            .banner__imagem {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .banner__titulo {
+                color: #fdfdfd;
+                font-family: 'Pacifico', cursive;
+                font-size: 5rem;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+                width: 100%;
+            }
+
+            .sobre {
+                text-align: center;
+                padding: 2.5rem;
+            }
+
+            .sobre__titulo {
+                color: #8d0606;
+                font-family: 'Pacifico', cursive;
+                font-size: 3rem;
+            }
+
+            .sobre__descricao {
+                color: #595959;
+                font-size: 1.5rem;
+                font-weight: 100;
+                padding: 2rem;
+            }
+
+            .valores__titulo {
+                color: #8d0606;
+                font-family: 'Pacifico', cursive;
+                font-size: 3rem;
+            }
+
+            .valores__lista {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            .valores__item {
+                color: #595959;
+                font-size: 1.5rem;
+                font-weight: 100;
+                margin-bottom: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img class="logo" src="assets/img/logo.jpg" alt="Logo da Empresa" />
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Início</a></li>
+                    <li class="menu__item"><a class="menu__link ativo" href="#">Sobre Nós</a></li>
+                    <li class="menu__item"><a class="menu__link" href="detalhes.html">Detalhes</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="corpo">
+            <section class="banner">
+                <img src="assets/img/imobiliaria.png" class="banner__imagem" alt="Imagem do Banner" />
+                <h2 class="banner__titulo">Saiba mais!</h2>
+            </section>
+            <section class="sobre">
+                <h1 class="sobre__titulo">Sobre Nós</h1>
+                <h2 class="sobre__descricao">Somos uma empresa especializada em oferecer imóveis de luxo, com uma equipe dedicada e experiente no mercado imobiliário. Nossa missão é proporcionar aos nossos clientes uma experiência única na busca por seu lar perfeito, oferecendo imóveis exclusivos, de alta qualidade e em localizações privilegiadas.</h2>
+            </section>
+            <section class="valores">
+                <center>
+                    <h1 class="valores__titulo">Nossos Valores</h1>
+                    <br>
+                    <ul class="valores__lista">
+                        <li class="valores__item">Integridade: Atuamos com transparência, ética e respeito, construindo relacionamentos baseados na confiança.</li>
+                        <li class="valores__item">Excelência: Buscamos sempre oferecer um serviço de excelência, desde o primeiro contato até a conclusão do processo de compra.</li>
+                        <li class="valores__item">Personalização: Entendemos que cada cliente tem necessidades únicas, e por isso, oferecemos um atendimento personalizado e adaptado às suas preferências.</li>
+                        <li class="valores__item">Inovação: Estamos sempre em busca de novas soluções e tendências no mercado imobiliário, para garantir que nossos clientes tenham acesso aos melhores imóveis e serviços.</li>
+                    </ul>
+                </center>
+            </section>
+        </main>
+    </body>
+</html>

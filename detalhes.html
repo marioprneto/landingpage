@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Imóveis de Luxo - Apartamento de Luxo</title>
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <style>
+            .cabecalho {
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+
+            .logo {
+                width: 4%;
+            }
+
+            .menu__lista {
+                display: flex;
+            }
+
+            .menu__item {
+                list-style: none;
+            }
+
+            .menu__item:last-child .menu__link {
+                margin-right: 0;
+            }
+
+            .menu__link {
+                color: #808080;
+                margin-right: 1.25rem;
+                text-decoration: none;
+            }
+
+            .menu__link.ativo {
+                color: #333333;
+                font-weight: bold;
+            }
+
+            .menu__link:hover {
+                color: #8110e3;
+                text-decoration: underline;
+                transform: scale(1.5);
+                transition: 1s;
+            }
+
+            .apartamento {
+                text-align: center;
+                padding: 2.5rem;
+            }
+
+            .apartamento__titulo {
+                color: #8d0606;
+                font-family: 'Pacifico', cursive;
+                font-size: 3rem;
+            }
+
+            .apartamento__descricao {
+                color: #595959;
+                font-size: 1.5rem;
+                font-weight: 100;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .apartamento__imagem {
+                width: 25%;
+                height: auto;
+                object-fit: cover;
+                margin-bottom: 2rem;
+                margin-left: 2.5%;
+            }
+
+            .apartamento__caracteristicas {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .caracteristica {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 1.2rem;
+                color: #595959;
+            }
+
+            .caracteristica__icone {
+                color: #8110e3;
+            }
+
+            .apartamento__botao {
+                display: inline-block;
+                background-color: #8110e3;
+                color: #fdfdfd;
+                padding: 0.75rem 1rem;
+                border: none;
+                border-radius: 4px;
+                font-size: 1.2rem;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+
+            .apartamento__botao:hover {
+                background-color: #6a0fc8;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img class="logo" src="assets/img/logo.jpg" alt="Logo da Empresa">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Início</a></li>
+                    <li class="menu__item"><a class="menu__link" href="sobre.html">Sobre Nós</a></li>
+                    <li class="menu__item"><a class="menu__link ativo" href="#">Detalhes</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="apartamento">
+                <h1 class="apartamento__titulo">Apartamento de Luxo</h1>
+                <p class="apartamento__descricao">Desfrute de uma vista deslumbrante e acabamentos de alta qualidade neste apartamento de luxo.</p>
+                <img src="assets/img/apto1.webp" class="apartamento__imagem" alt="Imagem do Apartamento de Luxo">
+                <img src="assets/img/apto2.webp" class="apartamento__imagem" alt="Imagem do Apartamento de Luxo">
+                <img src="assets/img/apto3.webp" class="apartamento__imagem" alt="Imagem do Apartamento de Luxo">
+                <div class="apartamento__caracteristicas">
+                    <div class="caracteristica">
+                        <i class="caracteristica__icone"></i>
+                        <span>1 quarto</span>
+                    </div>
+                    <div class="caracteristica">
+                        <i class="caracteristica__icone"></i>
+                        <span>1 banheiro</span>
+                    </div>
+                    <div class="caracteristica">
+                        <i class="caracteristica__icone"></i>
+                        <span>1 vagas de estacionamento</span>
+                    </div>
+                    <div class="caracteristica">
+                        <i class="caracteristica__icone"></i>
+                        <span>75 m²</span>
+                    </div>
+                </div>
+                <p class="apartamento__descricao">Este apartamento de luxo oferece uma vida de conforto e elegância. Com uma ampla sala de estar, cozinha moderna, suíte master espaçosa e uma vista deslumbrante, este é o lar perfeito para quem busca sofisticação e exclusividade.</p>
+                <a href="contato.html" class="apartamento__botao">Entre em contato para mais informações</a>
+            </section>
+        </main>
+    </body>
+</html>
